@@ -1,0 +1,102 @@
+<style>
+    body{
+        font-family: sans-serif;
+        text-align: center;
+        background-color: plum;
+        color: white;
+    }
+</style>
+<script src="../dependencies/mousetrap.js"></script>
+<script>
+    
+    Mousetrap.bind('alt+shift+f', function(){
+        console.log('¯\\\_(ツ)_/¯');
+        document.getElementById("emoji").innerHTML = '¯\\\_(ツ)_/¯'; 
+        document.getElementById("emoji-description").innerHTML = 'Shrug'; 
+        document.getElementById("emoji-keys").innerHTML = 'Alt-Shift-F'; 
+    })
+
+    Mousetrap.bind('alt+shift+p', function(){
+        console.log('💩');
+        document.getElementById("emoji").innerHTML = '💩'; 
+        document.getElementById("emoji-description").innerHTML = 'Poop'; 
+        document.getElementById("emoji-keys").innerHTML = 'Alt-Shift-P'; 
+    })
+
+    Mousetrap.bind('alt+shift+b', function(){
+        console.log('🅱');
+        document.getElementById("emoji").innerHTML = '🅱'; 
+        document.getElementById("emoji-description").innerHTML = 'B'; 
+        document.getElementById("emoji-keys").innerHTML = 'Alt-Shift-B'; 
+    })
+
+    Mousetrap.bind('alt+shift+l', function(){
+        console.log('👀');
+        document.getElementById("emoji").innerHTML = '👀'; 
+        document.getElementById("emoji-description").innerHTML = 'Lookin'; 
+        document.getElementById("emoji-keys").innerHTML = 'Alt-Shift-L'; 
+    })
+
+    Mousetrap.bind('alt+shift+s', function(){
+        console.log('🤔');
+        document.getElementById("emoji").innerHTML = '🤔'; 
+        document.getElementById("emoji-description").innerHTML = 'Thinking Face'; 
+        document.getElementById("emoji-keys").innerHTML = 'Alt-Shift-S'; 
+    })
+/*
+  document.addEventListener('keydown', function(e) {   
+
+        if (e.keyCode in map) {
+
+            map[e.keyCode] = true;
+
+            if (map[70] && map[16] && map[18]) {
+                
+            }
+
+            else if(map[83] && map[16] && map[18]){
+                console.log('🤔');
+            } 
+
+            else if(map[76] && map[16] && map[18]){
+                console.log('👀');
+            }
+
+            else if(map[80] && map[16] && map[18]){
+                console.log('💩');
+            }
+
+            else if(map[66] && map[16] && map[18]){
+                console.log('🅱');
+            }   
+
+        }       
+
+    });
+
+    document.addEventListener('keyup', function(e) {
+        if (e.keyCode in map) {
+            map[e.keyCode] = false;
+        }
+    });
+    
+*/
+
+    
+ 
+
+</script>
+
+<body>
+
+<div class="1">
+
+    <h1 id="emoji"></h1>
+    <h1 id="emoji-description"></h1>
+    <h2 id="emoji-keys"></h2>
+
+</div>
+
+
+</body>     
+

@@ -1,0 +1,39 @@
+{
+    "name": "Emoji Keyboard",
+    "version": "1.0",
+    "description": "Keyboard Shortcuts to Paste Emojis.",
+    
+    "background": { 
+        "scripts": ["background.js"]
+    },
+    
+    "permissions": [
+        "tabs",
+        "input"
+    ],
+    
+    "browser_action": {
+        "default_icon":  "assets/keyboard.png",
+        "default_popup": "popup.html"
+    },
+    
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_start"
+        }
+    ],
+      
+    "input_components": [
+        {
+            "name": "Test IME",
+            "type": "ime",
+            "language": "en-US",
+            "layouts": ["us::eng"]
+        }
+    ],
+    
+    "manifest_version": 2
+
+}
