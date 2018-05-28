@@ -11,12 +11,9 @@ this._directMap={};return this};c.prototype.stopCallback=function(a,b){return-1<
 arguments)}}(b))};c.init();r.Mousetrap=c;"undefined"!==typeof module&&module.exports&&(module.exports=c);"function"===typeof define&&define.amd&&define(function(){return c})}})("undefined"!==typeof window?window:null,"undefined"!==typeof window?document:null);
 
 
-
-
-
 console.log("DEXTER");
+
 Mousetrap.bind('alt+shift+f', function(){
-    if(document.activeElement.ty)
     console.log('¯\\\_(ツ)_/¯');
 })
 
@@ -24,7 +21,7 @@ Mousetrap.bind('alt+shift+p', function(){
     console.log('💩');
 })
 
-Mousetrap.bind('alt+shift+b', function(){
+Mousetrap.bind('alt+shift+2', function(){
     console.log('🅱');
 })
 
